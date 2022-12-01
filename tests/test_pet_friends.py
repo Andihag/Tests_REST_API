@@ -137,7 +137,7 @@ def test_get_api_key_for_data_user_empty(email=empty_email, password=empty_passw
 
 
 def test_get_api_key_for_password_user_empty(email=valid_email, password=empty_password):
-    """ Проверяем что запрос api ключа c пустыми значениями логина и пароля возвращает статус 403
+    """ Проверяем что запрос api ключа c валидным значением логина и пустым значением пароля возвращает статус 403
     и в результате не содержится слово key """
 
     # Отправляем запрос и сохраняем полученный ответ с кодом статуса в status, а текст ответа в result
